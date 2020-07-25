@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #1F1F26;
+  color: white;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-family: 'Roboto', sans-serif;
+}
+
+header img {
+  width: 383px;
+}
+
+header .nav {
+  margin-right: 90px;
+  margin-top: 20px;
+}
+
+header h2 {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+header h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+header h5 {
+  font-size: 30px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+header .btn-hire {
+  background-color: #E84A5F;
+  color: white;
+  width: 100px;
+}
+
+header .btn-hire:hover {
+  background-color: #eb334c;
+  color: white;
+}
+
+header .resume {
+  font-size: 12px;
+  color: gray;
+}
+
+.biography .section-heading {
+  margin-bottom: 50px;
+}
+
+.biography .timeline-panel {
+  margin-top: 15px;
+}
+
+.biography .timeline-panel-add {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  header {
+    text-align: left;
+    padding-bottom: 30px;
+    padding-left: 20px;
+  }
+  header img {
+    margin-top: 30px;
+    width: 250px;
+  }
+  header .text-header {
+    margin-top: -30px;
+  }
+  header h2 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  header h3 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  header h5 {
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.5;
+  }
+  header .btn-hire:hover {
+    background-color: #eb334c;
+    color: white;
+  }
+  .biography {
+    padding-right: 5px;
+  }
+  .biography .timeline-panel {
+    margin-top: 0px;
+  }
+  .biography h4 {
+    font-size: 20px;
+  }
+  .biography p {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
