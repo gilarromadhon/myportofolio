@@ -31,10 +31,10 @@
                                     <a href="#skill" class="nav-link">Skill</a>
                                 </li>
                                 <li class="nav-item mx-md-3">
-                                    <a href="#" class="nav-link">Portofolio</a>
+                                    <a href="#portofolio" class="nav-link">Portofolio</a>
                                 </li>
                                 <li class="nav-item mx-md-3">
-                                    <a href="#" class="nav-link">Contact</a>
+                                    <a href="#contact" class="nav-link">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -43,8 +43,8 @@
                         <h2 class="mb-3">Hello</h2>
                         <h3 class="mb-3">I'm Gilar Romadhon</h3>
                         <h5 class="mb-5">Front - End Developer</h5>
-                        <a href="#" class="btn btn-hire">Hire Me.</a>
-                        <a href="#" class="ml-3 resume">Download Resume</a> 
+                        <a href="#" class="btn btn-hire" data-toggle="modal" data-target="#hire">Hire Me.</a>
+                        <a href="https://doc-14-98-docs.googleusercontent.com/docs/securesc/ase7hljahlsp5et030vgrqic18iof0bj/1a6p7eok3td4mqk43geb6o7i9lisohbr/1595786775000/06836180063455411987/06836180063455411987/1te5XuNBjnSjGLetAmchVi2eVrTYQF4g4?e=download&authuser=0&nonce=6ahp3tde2mhle&user=06836180063455411987&hash=mafip4cpp6055a84s012dlgppvffj6aj" class="ml-3 resume">Download Resume</a> 
                     </div>
                 </div>
             </div>
@@ -197,38 +197,68 @@
         </div>
       </section>
 
-      <section>
+      <section class="portofolio" id="portofolio">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 py-1">
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">Portofolio</h2>
+              <hr>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-lg-4 col-sm-6">
+              <div class="card porto1" style="width: 18rem;">
+                <img class="card-img-top" src="img/porto/barber.png" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-text">Mobile Apps Design</h5>
+                  <p class="card-text text-muted font-weight-light">Barbeer Shop</p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 py-1">
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="col-lg-4 col-sm-6">
+              <div class="card porto2" style="width: 18rem;">
+                <img class="card-img-top" src="img/porto/igracias.png" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-text">Mobile Apps Design</h5>
+                  <p class="card-text text-muted font-weight-light">Igracias Apps</p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 py-1">
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="col-lg-4 col-sm-6">
+              <div class="card porto3" style="width: 18rem;">
+                <img class="card-img-top" src="img/porto/planet pets.png" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-text">Mobile Apps Design</h5>
+                  <p class="card-text text-muted font-weight-light">Planet Pets</p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 py -1">
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+          </div>
+          <div class="row text-center">
+            <div class="col-lg-4 col-sm-4">
+              <div class="card porto1" style="width: 18rem;" data-toggle="modal" data-target="#exampleModal">
+                <img class="card-img-top" src="img/porto/barber.png" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-text">UI/UX Design</h5>
+                  <p class="card-text text-muted font-weight-light">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+              <div class="card porto2" style="width: 18rem;">
+                <img class="card-img-top" src="img/porto/igracias.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-text">UI/UX Design</h5>
+                  <p class="card-text text-muted font-weight-light">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+              <div class="card porto3" style="width: 18rem;">
+                <img class="card-img-top" src="img/porto/planet pets.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-text">UI/UX Design</h5>
+                  <p class="card-text text-muted font-weight-light">Lorem Ipsum</p>
                 </div>
               </div>
             </div>
@@ -236,6 +266,26 @@
         </div>
       </section>
 
+      <!-- Modal Hire -->
+      <div class="modal fade" id="hire" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Persetujuan</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Dengan ini bahwa anda setuju untuk mengrekrut Gilar Romadhon
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Agree</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <footer class="contact" id="contact">
         <div class="container">
@@ -244,13 +294,13 @@
               <h2 class="section-heading text-uppercase">Contact</h2>
               <hr>
               <div class="icon-contact">
-                <a href="#"><img src="img/contact/mail.png" alt=""></a>                        
-                <a href="#"><img src="img/contact/wa.png" alt=""></a>
-                <a href="#"><img src="img/contact/linkedin.png" alt=""></a>
-                <a href="#"><img src="img/contact/github.png" alt=""></a>
-                <a href="#"><img src="img/contact/dribbble.png" alt=""></a>
+                <a href="mailto:gilarromadhon@gmail.com"><img src="img/contact/mail.png" alt=""></a>                        
+                <a href="https://api.whatsapp.com/send?phone=6281214125517&text=Assalamualaikum%20wr%20wb"><img src="img/contact/wa.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/gilarromadhon/"><img src="img/contact/linkedin.png" alt=""></a>
+                <a href="https://www.github.com/gilarromadhon/"><img src="img/contact/github.png" alt=""></a>
+                <a href="https://www.dribbble.com/gilarromadhon"><img src="img/contact/dribbble.png" alt=""></a>
               </div>
-              <h6 class="font-weight-lighter text-muted">Copyright &copy; 2020. All Right Reserved.</h6>
+              <h6 class="font-weight-lighter text-muted">Copyright &copy; Gilar Romadhon 2020.</h6>
             </div>
           </div>
         </div>

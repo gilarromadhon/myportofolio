@@ -42,7 +42,6 @@ header{
         background-color: #E84A5F;
         color: white;
         width: 100px;
-        // box-shadow: 0.5rem -10px #26262b;
 
         &:hover{
             background-color: #eb334c;
@@ -89,6 +88,20 @@ header{
     .webdev, .uiux, .network{
         margin-left: 35px;
         border-radius: 0 0 50px 0;
+    }
+}
+
+.portofolio{
+    margin-bottom: 50px;
+    .porto1{
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+    .porto2{
+        margin-left: 35px;
+    }
+    .porto3{
+        margin-left: -30px;
     }
 }
 
@@ -162,6 +175,13 @@ footer{
         padding-bottom: 50px;
         .webdev, .uiux, .network{
             margin-left: 50px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .portofolio{
+        .porto1, .porto2, .porto3{
+            margin-left: 45px;
             margin-bottom: 20px;
         }
     }
