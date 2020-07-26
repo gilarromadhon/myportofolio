@@ -7,6 +7,12 @@ body {
   scroll-behavior: smooth;
 }
 
+hr {
+  width: 40px;
+  border: 3px solid #E84A5F;
+  margin-bottom: 50px;
+}
+
 header {
   background-color: #1F1F26;
   color: white;
@@ -57,8 +63,12 @@ header .resume {
   color: gray;
 }
 
-.biography .section-heading {
+.biography {
   margin-bottom: 50px;
+}
+
+.biography .section-heading {
+  margin-bottom: 0px;
 }
 
 .biography .timeline-panel {
@@ -69,10 +79,54 @@ header .resume {
   margin-top: 30px;
 }
 
+.skill {
+  background-color: #F5F5F5;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-bottom: 100px;
+}
+
+.skill .img-circle {
+  border-radius: 200%;
+  width: 100px;
+  height: 100px;
+  -webkit-box-shadow: 4px 3px 9px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 3px 9px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 90px;
+  margin-top: 30px;
+}
+
+.skill .img-skill {
+  width: 40px;
+  margin-top: 35px;
+  margin-left: 5px;
+}
+
+.skill .webdev, .skill .uiux, .skill .network {
+  margin-left: 35px;
+  border-radius: 0 0 50px 0;
+}
+
+footer {
+  background-color: #1F1F26;
+  color: white;
+}
+
+footer .icon-contact {
+  margin-left: 15px;
+  margin-bottom: 70px;
+}
+
+footer img {
+  width: 40px;
+  margin-right: 20px;
+}
+
 @media (max-width: 768px) {
   header {
     text-align: left;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     padding-left: 20px;
   }
   header img {
@@ -102,6 +156,9 @@ header .resume {
   .biography {
     padding-right: 5px;
   }
+  .biography .timeline-add {
+    padding-left: 20px;
+  }
   .biography .timeline-panel {
     margin-top: 0px;
   }
@@ -110,6 +167,25 @@ header .resume {
   }
   .biography p {
     font-size: 15px;
+  }
+  .skill {
+    padding-bottom: 50px;
+  }
+  .skill .webdev, .skill .uiux, .skill .network {
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+  footer {
+    background-color: #1F1F26;
+    color: white;
+  }
+  footer .icon-contact {
+    margin-left: 5px;
+    margin-bottom: 70px;
+  }
+  footer img {
+    width: 40px;
+    margin-right: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */

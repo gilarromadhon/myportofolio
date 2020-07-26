@@ -6,6 +6,11 @@ body{
 *{
     scroll-behavior: smooth;
 }
+hr{
+    width: 40px;
+    border: 3px solid #E84A5F;
+    margin-bottom: 50px;
+}
 
 header{
     background-color: #1F1F26;
@@ -51,8 +56,9 @@ header{
 }
 
 .biography{
+    margin-bottom: 50px;
     .section-heading{
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
     .timeline-panel{
         margin-top: 15px;
@@ -62,10 +68,48 @@ header{
     }
 }
 
+.skill{
+    background-color: #F5F5F5;
+    height: max-content;
+    padding-bottom: 100px;
+
+    .img-circle{
+        border-radius: 200%;
+        width: 100px;
+        height: 100px;
+        box-shadow: 4px 3px 9px 0 rgba(0, 0, 0, 0.2);
+        margin-left: 90px;
+        margin-top: 30px;
+    }
+    .img-skill{
+        width: 40px;
+        margin-top: 35px;
+        margin-left: 5px;
+    }
+    .webdev, .uiux, .network{
+        margin-left: 35px;
+        border-radius: 0 0 50px 0;
+    }
+}
+
+footer{
+    background-color: #1F1F26;
+    color: white;
+
+    .icon-contact{
+        margin-left: 15px;
+        margin-bottom: 70px;
+    }
+    img{
+        width: 40px;
+        margin-right: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     header{
         text-align: left;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
         padding-left: 20px;
 
         img{
@@ -89,15 +133,20 @@ header{
             opacity: 0.5;
         }
         .btn-hire{
+
             &:hover{
                 background-color: #eb334c;
                 color: white;
             }
         }
+        
     }
     .biography{
         padding-right: 5px;
 
+        .timeline-add{
+            padding-left: 20px;
+        }
         .timeline-panel{
             margin-top: 0px;
         }
@@ -106,6 +155,28 @@ header{
         }
         p{
             font-size: 15px;
+        }
+    }
+
+    .skill{
+        padding-bottom: 50px;
+        .webdev, .uiux, .network{
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+    }
+
+    footer{
+        background-color: #1F1F26;
+        color: white;
+    
+        .icon-contact{
+            margin-left: 5px;
+            margin-bottom: 70px;
+        }
+        img{
+            width: 40px;
+            margin-right: 10px;
         }
     }
 }
