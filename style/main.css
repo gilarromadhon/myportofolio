@@ -47,6 +47,17 @@ header h5 {
   opacity: 0.5;
 }
 
+header .button {
+  position: relative;
+  top: 0;
+  -webkit-transition: top ease 0.5s;
+  transition: top ease 0.5s;
+}
+
+header .button:hover {
+  top: -10px;
+}
+
 header .btn-hire {
   background-color: #E84A5F;
   color: white;
@@ -80,11 +91,25 @@ header .resume {
 }
 
 .skill {
-  background-color: #F5F5F5;
+  background-color: #f1f1f1;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding-bottom: 100px;
+}
+
+.skill .card {
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  -webkit-transition: top ease 1s;
+  transition: top ease 1s;
+}
+
+.skill .card:hover {
+  -webkit-box-shadow: 3px 40px 42px -39px rgba(0, 0, 0, 0.52);
+  box-shadow: 3px 40px 42px -39px rgba(0, 0, 0, 0.52);
+  top: -10px;
 }
 
 .skill .img-circle {
@@ -125,19 +150,55 @@ header .resume {
   margin-left: -30px;
 }
 
+.portofolio .zoom {
+  overflow: hidden;
+}
+
+.portofolio .zoom img {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.portofolio .zoom:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 footer {
   background-color: #1F1F26;
   color: white;
 }
 
 footer .icon-contact {
-  margin-left: 15px;
-  margin-bottom: 70px;
+  margin-left: 413px;
+  margin-bottom: 170px;
 }
 
-footer img {
+footer .contact {
+  float: left;
+  padding-top: 9px;
+  background-color: white;
+  border-radius: 200%;
   width: 40px;
+  height: 40px;
   margin-right: 20px;
+  position: relative;
+  top: 0;
+  -webkit-transition: top ease 0.5s;
+  transition: top ease 0.5s;
+}
+
+footer .contact:hover {
+  top: -10px;
+}
+
+footer .icon {
+  font-size: 18px;
+  color: #1F1F26;
+}
+
+footer .icon:hover {
+  color: #eb334c;
 }
 
 @media (max-width: 768px) {
@@ -201,12 +262,8 @@ footer img {
     color: white;
   }
   footer .icon-contact {
-    margin-left: 5px;
-    margin-bottom: 70px;
-  }
-  footer img {
-    width: 40px;
-    margin-right: 10px;
+    margin-left: 50px;
+    margin-bottom: 170px;
   }
 }
 /*# sourceMappingURL=main.css.map */
